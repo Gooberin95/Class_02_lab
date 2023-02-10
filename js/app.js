@@ -47,6 +47,7 @@ if(responceSix === null){
   alert('Incorrect');
 }
 
+alert("Thank you for visiting my site " + responce);
 
 
 
