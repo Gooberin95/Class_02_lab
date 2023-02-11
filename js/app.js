@@ -3,47 +3,52 @@
 let responce = prompt('Welcome to my website, what is your name?..');
 alert('Hello and welcome to my website ' + responce);
 let responceTwo = prompt('Do I have Brown hair? Answer Yes or No ');
-if(responceTwo === null){
+let userData = responceTwo.toLowerCase();
+if(userData === null){
   alert('Please answer!!');
-} else if (responceTwo === 'yes') {
+} else if (userData === 'yes' || userData === 'y') {
   alert('Correct');
-} else if (responceTwo === 'no') {
+} else if (userData === 'no' || userData === 'n') {
   alert('Incorrect');
 }
 
 let responceThree = prompt('Is today Monday? Answer yes or no');
-if(responceThree === null){
+let userDatatwo = responceThree.toLowerCase();
+if(userDatatwo === null){
   alert('Please answer!!');
-} else if (responceThree === 'yes') {
+} else if (userDatatwo === 'yes' || userDatatwo === 'y');{
   alert('Correct');
-} else if (responceThree === 'no') {
+} else if (userDatatwo === 'no' || userDatatwo == 'n'{
   alert('Incorrect');
 }
 
 let responceFour = prompt('Is today Sunny? Answer yes or no');
-if(responceFour === null){
+let userDatathree = responceFour.toLowerCase();
+if(userDatathree === null){
   alert('Please answer!!');
-} else if (responceFour === 'yes') {
+} else if (userDatathree === 'yes' || userDatathree === 'y') {
   alert('Correct');
-} else if (responceFour === 'no') {
+} else if (userDatathree === 'no' || userDatathree == 'n') {
   alert('Incorrect');
 }
 
 let responceFive = prompt('Am I tall or short? Answer yes or no');
-if(responceFive === null){
+let userDatafour = responceFive.toLowerCase();
+if(userDatafour === null){
   alert('Please answer!!');
-} else if (responceFive === 'yes') {
+} else if (userDatafour === 'yes' || userDatafour === 'y') {
   alert('Correct');
-} else if (responceFive === 'no') {
+} else if (userDatafour === 'no' || userDatafour === 'n') {
   alert('Incorrect');
 }
 
 let responceSix = prompt('Do I like and enjoy climbing trees? Answer yes or no');
-if(responceSix === null){
+let userDatafive = responceSix.toLowerCase();
+if(userDatafive === null){
   alert('Please answer!!');
-} else if (responceSix === 'yes') {
+} else if (userDatafive === 'yes' || userDatafive === 'y') {
   alert('Correct');
-} else if (responceSix === 'no') {
+} else if (userDatafive === 'no' || userDatafive === 'n') {
   alert('Incorrect');
 }
 
