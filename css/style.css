@@ -1,0 +1,45 @@
+#one {
+
+background-color: rgba(228, 217, 60, 0.945); 
+color: white;
+text-align: right; 
+font-size: 50px; text-align: center; 
+margin-right: 120px; 
+margin-left:120px; Border-radius: 15px;
+
+}
+
+#two {
+    background-color:rgba(3, 207, 243, 0.932); 
+    text-align: center; 
+    margin-right: 100px; 
+    margin-left:100px; 
+    Border-radius: 15px;
+}
+#footer {
+    text-align: center;
+    
+
+}
+
+#list {
+    text-align: left; 
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    
+
+}
+
+#olist {
+    background-color: rgba(228, 217, 60, 0.945); 
+    color: white;
+ 
+    font-size: 50px; 
+     
+   
+    Border-radius: 15px;
+    
+    
+    
+}
