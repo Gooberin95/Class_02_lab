@@ -1,5 +1,5 @@
 'user strict';
-let responce = prompt('Welcome to my website, what is your name?..');
+/*let responce = prompt('Welcome to my website, what is your name?..');
 alert('Hello and welcome to my website ' + responce);
 let responceTwo = prompt('Do I have Brown hair? Answer Yes or No ');
 let userData = responceTwo.toLowerCase();
@@ -50,12 +50,14 @@ if(userDatafive === null){
 } else if (userDatafive === 'no' || userDatafive === 'n') {
   alert('Incorrect');
 }
+*/
 
 
 
-
+/*
 let r = 6;
-
+let x = 0;
+let exit = 4;
 while (r) {
   let responceSeven = prompt('Guess a number enter numeric value here ');
   if(responceSeven === null){
@@ -65,10 +67,39 @@ while (r) {
   } else if (responceSeven == 6) {
     alert('Correct');
     r = false;
-  } else if (responceSeven < r) {
-    alert('Incorrect');
+  } else if (responceSeven < 6) {
+    alert('Incorrect to low');
+    x ++;
+    if(x === exit) {
+      r = false;
+    }
+    
+
+  } else if(responceSeven > 6) {
+    alert('Incorrect to high');
+    x ++;
+    if(x === exit);
+    r = false;
+
+  }
+}
+*/
+
+
+let box = 1;
+let h = true;
+while (h) {
+  let responceEight = prompt('How many colors from this list are on a tiger? Answer numericaly   ');
+  if(responceEight > box) {
+    alert('Please answer!!');
+    h === false;
+
+  } else if(responceEight === null);{
+    alert('Try again');
 
   }
 }
 
+
+alert('You were incorrect ' + x + ' Out of 4' + ' The correct answer is 6');
 
