@@ -1,105 +1,64 @@
 'user strict';
-/*let responce = prompt('Welcome to my website, what is your name?..');
-alert('Hello and welcome to my website ' + responce);
-let responceTwo = prompt('Do I have Brown hair? Answer Yes or No ');
-let userData = responceTwo.toLowerCase();
-if(userData === null){
-  alert('Please answer!!');
-} else if (userData === 'yes' || userData === 'y') {
-  alert('Correct');
-} else if (userData === 'no' || userData === 'n') {
-  alert('Incorrect');
+function myfunction(response) {
+  let input  = prompt(response).toLowerCase();
+  alert('Hello and welcome to my website ' + input);
 }
 
-let responceThree = prompt('Is today Monday? Answer yes or no');
-let userDatatwo = responceThree.toLowerCase();
-if(userDatatwo === null){
-  alert('Please answer!!');
-} else if (userDatatwo === 'yes' || userDatatwo === 'y'){
-  alert('Correct');
-} else if (userDatatwo === 'no' || userDatatwo === 'n'){
-  alert('Incorrect');
-}
-
-let responceFour = prompt('Is today Sunny? Answer yes or no');
-let userDatathree = responceFour.toLowerCase();
-if(userDatathree === null){
-  alert('Please answer!!');
-} else if (userDatathree === 'yes' || userDatathree === 'y') {
-  alert('Correct');
-} else if (userDatathree === 'no' || userDatathree === 'n') {
-  alert('Incorrect');
-}
-
-let responceFive = prompt('Am I tall or short? Answer yes or no');
-let userDatafour = responceFive.toLowerCase();
-if(userDatafour === null){
-  alert('Please answer!!');
-} else if (userDatafour === 'yes' || userDatafour === 'y') {
-  alert('Correct');
-} else if (userDatafour === 'no' || userDatafour === 'n') {
-  alert('Incorrect');
-}
-
-let responceSix = prompt('Do I like and enjoy climbing trees? Answer yes or no');
-let userDatafive = responceSix.toLowerCase();
-if(userDatafive === null){
-  alert('Please answer!!');
-} else if (userDatafive === 'yes' || userDatafive === 'y') {
-  alert('Correct');
-} else if (userDatafive === 'no' || userDatafive === 'n') {
-  alert('Incorrect');
-}
-*/
-
-
-
-/*
-let r = 6;
-let x = 0;
-let exit = 4;
-while (r) {
-  let responceSeven = prompt('Guess a number enter numeric value here ');
-  if(responceSeven === null){
+myfunction('What is your name?');
+function yesIsCorrect(response2) {
+  let input = prompt(response2).toLowerCase();
+  if (input === null) {
     alert('Please answer!!');
-
-  // eslint-disable-next-line eqeqeq
-  } else if (responceSeven == 6) {
+  } else if (input === 'yes' || input === 'y') {
     alert('Correct');
-    r = false;
-  } else if (responceSeven < 6) {
-    alert('Incorrect to low');
-    x ++;
-    if(x === exit) {
-      r = false;
+  } else if (input === 'no' || input === 'n') {
+    alert('Incorrect');
+  }
+}
+
+yesIsCorrect('Do I have Brown hair?');
+yesIsCorrect('Is today Monday?');
+yesIsCorrect('Is today Sunday?');
+yesIsCorrect('Am I tall or short?');
+yesIsCorrect('Do I like and enjoy climbing trees? Answer yes or no');
+function guessingGame(ImThinkingOfANumber){
+  let r = 6;
+  let exit = 4;
+  while (exit) {
+    let numericalInput = prompt(ImThinkingOfANumber);
+    parseInt(numericalInput);
+    if (numericalInput === null) {
+      alert('Please answer!!');
+    } else if (numericalInput === r) {
+      alert('Correct');
+      break;
+    } else if (numericalInput < r) {
+      alert('Incorrect to low');
+      exit--;
+    } else if (numericalInput > r) {
+      alert('Incorrect to high');
+      exit--;
     }
-    
-
-  } else if(responceSeven > 6) {
-    alert('Incorrect to high');
-    x ++;
-    if(x === exit);
-    r = false;
-
-  }
-}
-*/
-
-
-let box = 1;
-let h = true;
-while (h) {
-  let responceEight = prompt('How many colors from this list are on a tiger? Answer numericaly   ');
-  if(responceEight > box) {
-    alert('Please answer!!');
-    h === false;
-
-  } else if(responceEight === null);{
-    alert('Try again');
-
   }
 }
 
+let input = 'I\'m thinking of a number between 1 and 10 what is it?';
 
-alert('You were incorrect ' + x + ' Out of 4' + ' The correct answer is 6');
+guessingGame(input);
 
+// let box = 1;
+// let h = true;
+// while (h) {
+//   let responceEight = prompt('How many colors from this list are on a tiger? Answer numericaly   ');
+//   if (responceEight > box) {
+//     alert('Please answer!!');
+//     h === false;
+
+//   } else if (responceEight === null); {
+//     alert('Try again');
+
+//   }
+// }
+
+
+// alert('You were incorrect ' + x + ' Out of 4' + ' The correct answer is 6');
